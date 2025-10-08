@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raymond Wasike | Software Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Modern Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Raymond.</div>
-        <ul class="nav-links">
+        <div class="logo">
+            <svg width="32" height="32" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" fill="#64ffda"/><text x="13" y="32" font-family="Poppins, Arial" font-size="20" font-weight="bold" fill="#0a192f">RW</text></svg>
+            Raymond.
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -19,89 +29,169 @@
         </ul>
     </nav>
 
-    <section id="home" class="hero-section">
+    <section id="home" class="hero-section fade-in">
         <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Raymond Wasike</span></h1>
+            <h1>Hi, I'm <span class="highlight underline">Raymond Wasike</span></h1>
             <h2>Software Engineer</h2>
             <p>
                 Software Engineer with 2 years in Software Development, Information Systems management, Cybersecurity strategies and Network Administration from My Attachment and Individual and Group Projects in the related Fields. I’ve completed my course and awaiting graduation in December 2025. Passionate about leveraging technology to improve efficiency, continuous learning, teamwork, and contributing to impactful projects within dynamic organizations.
             </p>
             <div class="hero-buttons">
-                <a href="#contact" class="btn primary">Hire Me</a>
-                <a href="#contact" class="btn secondary">Let's Talk</a>
+                <a href="#contact" class="btn primary">
+                    <span>Hire Me</span>
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" stroke="#0a192f" stroke-width="2" stroke-linecap="round"/></svg>
+                </a>
+                <a href="#contact" class="btn secondary">
+                    <span>Let's Talk</span>
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M5 12h14M13 6l6 6-6 6" stroke="#64ffda" stroke-width="2" stroke-linecap="round"/></svg>
+                </a>
             </div>
             <div class="social-icons">
-                <a href="mailto:rswasike18@gmail.com" title="Email"><img src="icons/email.svg" alt="Email"></a>
-                <a href="https://www.linkedin.com/in/raymond-wasike-692444389" target="_blank" title="LinkedIn"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
-                <!-- GitHub icon will be added later -->
+                <a href="mailto:rswasike18@gmail.com" title="Email">
+                    <img src="icons_email.svg" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/raymond-wasike-692444389" target="_blank" title="LinkedIn">
+                    <img src="icons_linkedin.svg" alt="LinkedIn">
+                </a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
+    <section id="about" class="about-section fade-in">
         <h2>About</h2>
         <p>
             I'm Raymond Wasike, a passionate software engineer with experience in software development, IT systems, cybersecurity, and network administration. I thrive in dynamic teams and love using technology to solve real-world problems. My educational journey concludes with my graduation in December 2025, and I'm eager to contribute to impactful projects in the tech industry.
         </p>
     </section>
 
-    <section id="skills" class="skills-section">
+    <section id="skills" class="skills-section fade-in">
         <h2>Skills</h2>
         <ul class="skills-list">
-            <li>Software Development and Maintenance</li>
+            <li>Software Development & Maintenance</li>
             <li>System Maintenance</li>
             <li>Database Management</li>
             <li>Cybersecurity Strategies</li>
             <li>Network Administration</li>
-            <li>Data Analysis and Entry</li>
+            <li>Data Analysis & Entry</li>
         </ul>
     </section>
 
-    <section id="projects" class="projects-section">
+    <section id="projects" class="projects-section fade-in">
         <h2>Portfolio</h2>
         <div class="projects-grid">
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 1</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>HTML</span> <span>CSS</span>
+                </div>
             </div>
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 2</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>JavaScript</span> <span>Python</span>
+                </div>
             </div>
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 3</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>React</span> <span>APIs</span>
+                </div>
             </div>
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 4</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>Network</span> <span>Security</span>
+                </div>
             </div>
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 5</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>Data</span> <span>Analysis</span>
+                </div>
             </div>
             <div class="project-card coming-soon">
+                <div class="project-icon">
+                    <svg width="40" height="40" fill="#64ffda" viewBox="0 0 24 24"><path d="M12 2a10 10 0 110 20 10 10 0 010-20zm0 2a8 8 0 100 16 8 8 0 000-16zm0 3a5 5 0 110 10 5 5 0 010-10z"/></svg>
+                </div>
                 <h3>Project 6</h3>
                 <p>Coming Soon</p>
+                <div class="tech-tags">
+                    <span>Database</span> <span>Admin</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section fade-in">
         <h2>Contact</h2>
         <div class="contact-info">
-            <p><strong>Email:</strong> <a href="mailto:rswasike18@gmail.com">rswasike18@gmail.com</a></p>
-            <p><strong>Phone:</strong> <a href="tel:0791626386">0791626386</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/raymond-wasike-692444389" target="_blank">Raymond Wasike</a></p>
-            <!-- GitHub will be added when available -->
+            <p>
+                <img src="icons_email.svg" alt="Email" class="icon">
+                <strong>Email:</strong>
+                <a href="mailto:rswasike18@gmail.com">rswasike18@gmail.com</a>
+            </p>
+            <p>
+                <svg class="icon" width="24" height="24" fill="#64ffda" viewBox="0 0 24 24"><path d="M6.62 10.79a15.464 15.464 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.49 2.53.76 3.88.76a1 1 0 011 1v3.5a1 1 0 01-1 1C10.29 22 2 13.71 2 4.5a1 1 0 011-1H6.5a1 1 0 011 1c0 1.35.27 2.67.76 3.88a1 1 0 01-.21 1.11l-2.2 2.2z"/></svg>
+                <strong>Phone:</strong>
+                <a href="tel:0791626386">0791626386</a>
+            </p>
+            <p>
+                <img src="icons_linkedin.svg" alt="LinkedIn" class="icon">
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/raymond-wasike-692444389" target="_blank">Raymond Wasike</a>
+            </p>
         </div>
         <div class="resume-download">
-            <a href="Raymond_Wasike_Resume.pdf" class="btn primary" download>Download Resume</a>
+            <a href="Raymond_Wasike_Resume.pdf" class="btn primary" download>
+                <svg width="22" height="22" fill="#0a192f" viewBox="0 0 24 24"><path d="M12 16V4m0 12l4-4m-4 4l-4-4m12 8a2 2 0 01-2 2H6a2 2 0 01-2-2V4a2 2 0 012-2h6" stroke="#0a192f" stroke-width="2" stroke-linecap="round"/></svg>
+                <span>Download Resume</span>
+            </a>
         </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Raymond Wasike. All rights reserved.</p>
     </footer>
+
+    <script>
+      // Hamburger menu toggle for mobile
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+      menuToggle.onclick = () => navLinks.classList.toggle('open');
+
+      // Animate sections on scroll
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.1 };
+
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+
+      faders.forEach(fader => appearOnScroll.observe(fader));
+    </script>
 </body>
 </html>
