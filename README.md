@@ -13,12 +13,7 @@ This is the personal portfolio website of Raymond Wasike, a Software Engineer sp
 
 ## Deployment
 
-This site is designed for deployment on GitHub Pages via the repository: `rswasike.github.io`.
-
-## Customization
-
-- To add your projects, edit the "Portfolio" section in `index.html`.
-- To update the resume, replace `Raymond_Wasike_Resume.pdf` in the repository.
+This site is designed for deployment on GitHub Pages via the repository: `rswasike.vercel,app`.
 
 ## Credits
 
