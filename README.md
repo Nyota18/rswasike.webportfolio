@@ -1,6 +1,6 @@
-# Raymond Wasike Portfolio
+# Phileria Nerima Portfolio
 
-This is the personal portfolio website of Raymond Wasike, a Software Engineer specializing in Software Development, Information Systems management, Cybersecurity, and Network Administration.
+This is the personal portfolio website of Phileria Nerima, I am a dynamic and results-driven Customer Experience and Executive Operations professional with over four years of proven success in telecommunications and customer service management.
 
 ## Features
 
@@ -13,7 +13,7 @@ This is the personal portfolio website of Raymond Wasike, a Software Engineer sp
 
 ## Deployment
 
-This site is designed for deployment on GitHub Pages via the repository: `rswasike.vercel,app`.
+This site is designed for deployment on GitHub Pages via the repository: `philerianerima.vercel,app`.
 
 ## Credits
 
